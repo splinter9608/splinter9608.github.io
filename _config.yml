@@ -19,7 +19,7 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Gulag's Devlog v1"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "하다보면 풀스택..?"
 name                     : "Gulag"
 description              : "First amazing website."
 url                      : "https://splinter9608.github.io"
