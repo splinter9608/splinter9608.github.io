@@ -124,7 +124,7 @@ author:
       url: "mailto:splinter9608@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://splinter9608.github.io"
+      url: "https://splinter9608.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -133,7 +133,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/splinter9608"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/jhyuk_jeon"
@@ -149,7 +149,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://splinter9608.github.io"
+      url: "https://github.com/splinter9608"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
