@@ -1,12 +1,16 @@
 # main links
 main:
   - title: "Category"
-    url: /categories/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+    url: /
+  - title: "소개"
+    url: /about/
+  - title: "기초 학습"
+    url: /fundamentals/
+  - title: "프로젝트"
+    url: /projects/
+  - title: "오답노트"
+    url: /error-log/
+  - title: "자격증 준비"
+    url: /certification-prep/
+  - title: "성장 기록"
+    url: /growth-log/
