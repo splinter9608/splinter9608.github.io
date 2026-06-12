@@ -1,9 +1,12 @@
 ---
-layout: page
-title: "소개"
+title: "About"
+layout: single
 permalink: /about/
+author_profile: true
 ---
 
-# 소개
-이 블로그는 기획자가 PM 성장을 위해 AWS와 다양한 개발 지식을 배우고 기록하기 위한 공간입니다.
-이곳에서 학습 과정과 경험을 공유하고, 같은 길을 걷는 분들과 소통하고자 합니다.
+PM으로 일하면서 배우고 만들고 기록합니다.
+
+- 자율주행 농기계 PM @ TYMICT
+- 농업기계공학 석사 (전북대)
+- AWS SAA / SQLD / JLPT N1
