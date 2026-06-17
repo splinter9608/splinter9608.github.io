@@ -12,12 +12,13 @@ search: false
    CUSTOM OVERRIDES
    ========================================================================== */
 
-// 1. 본문 콘텐츠 영역 확장 (wide 모드에서 우측 TOC 패딩 제거)
+// 1. 본문 콘텐츠 영역 확장 (우측 TOC 예약 패딩만 제거, float 레이아웃은 유지)
 .wide .page {
   @media (min-width: 1024px) {
     padding-inline-end: 1em;
-    width: 100%;
-    float: none;
+  }
+  @media (min-width: 1280px) {
+    padding-inline-end: 1em;
   }
 }
 

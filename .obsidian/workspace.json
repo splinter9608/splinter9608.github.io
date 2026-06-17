@@ -183,8 +183,10 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "4206d8b9419bd060",
+  "active": "9fd890a5a1b5489c",
   "lastOpenFiles": [
+    "_posts/2026-06-18-aws-ha-scalability.md",
+    "assets/css/main.scss.tmp.37700.60a215057fb4",
     "assets/css/main.scss.tmp.14624.ea8301e36780",
     "assets/css/main.scss.tmp.14624.bc011b0c31a3",
     "_config.yml.tmp.14624.5a2cc31ee156",
@@ -195,9 +197,7 @@
     "_includes/post-nav.html.tmp.14624.2c206ac52c15",
     "_data/navigation.yml.tmp.14624.1581b2ee2477",
     "_pages/blog.md",
-    "_pages/blog.md.tmp.14624.05f64f97a64c",
     "_pages/project.md",
-    "_pages/project.md.tmp.14624.675de55ab377",
     "_pages/study-markdown.md",
     "_pages/study-gnss.md",
     "_pages/study-aws.md",
