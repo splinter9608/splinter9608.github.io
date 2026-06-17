@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-06-19-aws-cache.md",
+                "file": "_posts/2026-06-20-aws-dns-network.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-19-aws-cache"
+              "title": "2026-06-20-aws-dns-network"
             }
           }
         ]
@@ -185,8 +185,10 @@
   },
   "active": "4206d8b9419bd060",
   "lastOpenFiles": [
-    "_pages/fundamentals/aws-basics/cache.md",
+    "_posts/2026-06-19-aws-cache.md",
     "_posts/2026-06-18-aws-ha-scalability.md",
+    "_posts/2026-06-20-aws-dns-network.md",
+    "_pages/fundamentals/aws-basics/cache.md",
     "_posts/2024-09-05-markdown.md",
     "assets/css/main.scss.tmp.37700.60a215057fb4",
     "assets/css/main.scss.tmp.14624.ea8301e36780",
