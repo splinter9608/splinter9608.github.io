@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-06-15-notebooklm-mcp.md",
+                "file": "_posts/2024-09-07-ghblg.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-15-notebooklm-mcp"
+              "title": "2024-09-07-ghblg"
             }
           }
         ]
@@ -185,14 +185,17 @@
   },
   "active": "4206d8b9419bd060",
   "lastOpenFiles": [
+    "_posts/2024-09-09-aws1.md",
+    "_posts/2026-06-16-aws-intro.md",
+    "_posts/2026-06-16-aws-intro.md.3ab5c7aec9968a6ce8f791fcc1b98183.tmp",
+    "_posts/2026-06-16-restart.md",
+    "_posts/2026-06-15-notebooklm-mcp.md",
     "_posts/2026-06-16-ppp-correction-services.md",
     "_posts/2026-06-16-ppp-correction-services.md.tmp.21228.70497b741e33",
     "_posts/2026-06-15-obsidian-mcp.md",
-    "_posts/2026-06-15-notebooklm-mcp.md",
     "_posts/2024-09-05-fifth.md",
     "_posts/2024-09-05-markdown.md",
     "_posts/2024-09-07-ghblg.md",
-    "_posts/2024-09-09-aws1.md",
     "_pages/dev-notes-project.md",
     "_pages/dev-notes-aws.md",
     "_pages/dev-notes-vscode.md",
