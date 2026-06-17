@@ -1,7 +1,7 @@
 ---
-layout: posts
+layout: single
 title: "Claude Desktop에 NotebookLM MCP 연결하기"
-categories: [dev-notes, ai-setup]
+categories: [dev-notes, tools]
 tags: [Claude, MCP, NotebookLM, 개발환경]
 ---
 

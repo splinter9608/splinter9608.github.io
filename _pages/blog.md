@@ -1,11 +1,11 @@
 ---
-title: "Study"
+title: "Blog"
 layout: archive
-permalink: /study/
+permalink: /blog/
 author_profile: false
 ---
 
-{% assign posts = site.categories['study'] %}
+{% assign posts = site.categories['blog'] %}
 {% for post in posts %}
   {% include archive-single.html %}
 {% endfor %}

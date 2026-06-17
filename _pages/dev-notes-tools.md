@@ -1,11 +1,11 @@
 ---
-title: "Study"
+title: "Dev Notes / Tools"
 layout: archive
-permalink: /study/
+permalink: /dev-notes/tools/
 author_profile: false
 ---
 
-{% assign posts = site.categories['study'] %}
+{% assign posts = site.categories['tools'] %}
 {% for post in posts %}
   {% include archive-single.html %}
 {% endfor %}

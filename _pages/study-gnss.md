@@ -1,11 +1,11 @@
 ---
-title: "Study"
+title: "Study / GNSS"
 layout: archive
-permalink: /study/
+permalink: /study/gnss/
 author_profile: false
 ---
 
-{% assign posts = site.categories['study'] %}
+{% assign posts = site.categories['gnss'] %}
 {% for post in posts %}
   {% include archive-single.html %}
 {% endfor %}

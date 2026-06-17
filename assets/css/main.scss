@@ -7,3 +7,138 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* ==========================================================================
+   CUSTOM OVERRIDES
+   ========================================================================== */
+
+// 1. 본문 콘텐츠 영역 확장 (wide 모드에서 우측 TOC 패딩 제거)
+.wide .page {
+  @media (min-width: 1024px) {
+    padding-inline-end: 1em;
+    width: 100%;
+    float: none;
+  }
+}
+
+// 2. 포스트 네비게이션 사이드바
+.post-nav {
+  margin-top: 0.5em;
+
+  &__title {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #aaa;
+    margin-bottom: 0.5em;
+
+    i {
+      margin-right: 0.3em;
+    }
+  }
+
+  // Level 1: 최상위 카테고리
+  &__top {
+    margin-bottom: 0.15em;
+
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 0.35em 0;
+      list-style: none;
+      &::-webkit-details-marker { display: none; }
+    }
+  }
+
+  &__top-link {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #ddd;
+    text-decoration: none;
+    flex: 1;
+    letter-spacing: 0.03em;
+    &:hover { color: #fff; }
+  }
+
+  &__arrow {
+    font-size: 0.75em;
+    color: #666;
+    transition: transform 0.15s ease;
+    flex-shrink: 0;
+  }
+
+  &__top[open] > summary &__arrow {
+    transform: rotate(90deg);
+  }
+
+  // Level 2: 서브카테고리
+  &__sub {
+    margin: 0.1em 0 0.1em 0.7em;
+
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 0.25em 0;
+      list-style: none;
+      border-left: 2px solid #3a3a3a;
+      padding-left: 0.6em;
+      &::-webkit-details-marker { display: none; }
+    }
+  }
+
+  &__sub-link {
+    font-size: 0.75em;
+    font-weight: 600;
+    color: #bbb;
+    text-decoration: none;
+    flex: 1;
+    &:hover { color: #fff; }
+  }
+
+  &__count {
+    font-size: 0.65em;
+    color: #666;
+    flex-shrink: 0;
+    margin-left: 4px;
+  }
+
+  // Level 3: 포스트 목록
+  &__posts {
+    list-style: none;
+    padding: 0 0 0.3em 1.3em;
+    margin: 0;
+    border-left: 2px solid #2a2a2a;
+
+    &--direct {
+      margin-left: 0.7em;
+      border-left: 2px solid #3a3a3a;
+    }
+  }
+
+  &__post {
+    padding: 0.15em 0;
+
+    a {
+      font-size: 0.7em;
+      color: #888;
+      text-decoration: none;
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      line-height: 1.5;
+      padding-left: 0.4em;
+      &:hover { color: #ccc; }
+    }
+
+    &--active a {
+      color: #6fb3f2;
+      font-weight: 600;
+      &:hover { color: #90c8ff; }
+    }
+  }
+}

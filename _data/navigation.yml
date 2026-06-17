@@ -1,15 +1,11 @@
 # _data/navigation.yml
 
 main:
-  - title: "Work Log"
-    url: /categories/work-log/
   - title: "Dev Notes"
-    url: /categories/dev-notes/
+    url: /dev-notes/
   - title: "Study"
-    url: /categories/study/
-  - title: "Career"
-    url: /categories/career/
-  - title: "Growth"
-    url: /categories/growth/
-  - title: "About"
-    url: /about/
+    url: /study/
+  - title: "Project"
+    url: /project/
+  - title: "Blog"
+    url: /blog/

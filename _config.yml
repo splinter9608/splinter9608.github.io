@@ -3,7 +3,7 @@ minimal_mistakes_skin    : "dark"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Junhyuk's Log"
+title                    : "Gulag's Dev Prison"
 title_separator          : "-"
 subtitle                 : "하면 되든 안되든 결과가 남는다"
 name                     : "Jeon Junhyuk"
@@ -67,6 +67,7 @@ author:
       url: "https://instagram.com/jhyuk_jeon"
 
 # Site Footer
+copyright: "Gulag's Dev Prison"
 footer:
   links:
     - label: "GitHub"
@@ -75,6 +76,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/jhyuk_jeon"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:splinter9608@gmail.com"
 
 # Reading Files
 include:
@@ -180,14 +184,15 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: false
       share: true
       related: true
+      classes: wide
   - scope:
       path: ""
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false

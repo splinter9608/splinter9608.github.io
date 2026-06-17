@@ -1,0 +1,118 @@
+{% comment %}
+  3-level post navigation sidebar
+  Level 1: top-level category (dev-notes, study, project, blog)
+  Level 2: sub-category (tools, blog-setup, aws, gnss, ...)
+  Level 3: post titles
+{% endcomment %}
+
+{% assign top_categories = "dev-notes,study,project,blog" | split: "," %}
+{% assign top_labels = "Dev Notes,Study,Project,Blog" | split: "," %}
+{% assign top_urls = "/dev-notes/,/study/,/project/,/blog/" | split: "," %}
+
+<nav class="post-nav">
+  <h4 class="post-nav__title">
+    <i class="fas fa-fw fa-stream"></i> Contents
+  </h4>
+
+  {% for i in (0..3) %}
+    {% assign cat = top_categories[i] %}
+    {% assign label = top_labels[i] %}
+    {% assign url = top_urls[i] %}
+
+    {% assign cat_posts = site.categories[cat] %}
+    {% if cat_posts.size > 0 %}
+
+      {% comment %} 현재 페이지가 이 카테고리에 속하는지 확인 {% endcomment %}
+      {% assign is_active_top = false %}
+      {% for post in cat_posts %}
+        {% if page.url == post.url %}{% assign is_active_top = true %}{% endif %}
+      {% endfor %}
+
+      <details class="post-nav__top" {% if is_active_top %}open{% endif %}>
+        <summary class="post-nav__top-title">
+          <a href="{{ url | relative_url }}" class="post-nav__top-link" onclick="event.stopPropagation()">
+            {{ label }}
+          </a>
+          <span class="post-nav__arrow">›</span>
+        </summary>
+
+        {% comment %} 서브카테고리 수집 {% endcomment %}
+        {% assign sub_cats = "" | split: "" %}
+        {% for post in cat_posts %}
+          {% if post.categories[1] %}
+            {% assign sub = post.categories[1] %}
+            {% unless sub_cats contains sub %}
+              {% assign sub_cats = sub_cats | push: sub %}
+            {% endunless %}
+          {% endif %}
+        {% endfor %}
+
+        {% comment %} 서브카테고리가 있는 포스트 처리 {% endcomment %}
+        {% if sub_cats.size > 0 %}
+          {% for sub in sub_cats %}
+            {% assign sub_posts = site.categories[sub] %}
+            {% if sub_posts.size > 0 %}
+
+              {% assign is_active_sub = false %}
+              {% for post in sub_posts %}
+                {% if page.url == post.url %}{% assign is_active_sub = true %}{% endif %}
+              {% endfor %}
+
+              <details class="post-nav__sub" {% if is_active_sub %}open{% endif %}>
+                <summary class="post-nav__sub-title">
+                  <a href="{{ url | append: sub | append: "/" | relative_url }}" class="post-nav__sub-link" onclick="event.stopPropagation()">
+                    {{ sub | replace: "-", " " | capitalize }}
+                  </a>
+                  <span class="post-nav__count">{{ sub_posts | size }}</span>
+                </summary>
+
+                <ul class="post-nav__posts">
+                  {% for post in sub_posts %}
+                    <li class="post-nav__post{% if page.url == post.url %} post-nav__post--active{% endif %}">
+                      <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+                        {{ post.title | truncate: 35 }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </details>
+
+            {% endif %}
+          {% endfor %}
+
+          {% comment %} 서브카테고리 없는 포스트 (최상위 카테고리만 있는 것) {% endcomment %}
+          {% assign direct_posts = "" | split: "" %}
+          {% for post in cat_posts %}
+            {% unless post.categories[1] %}
+              {% assign direct_posts = direct_posts | push: post %}
+            {% endunless %}
+          {% endfor %}
+          {% if direct_posts.size > 0 %}
+            <ul class="post-nav__posts post-nav__posts--direct">
+              {% for post in direct_posts %}
+                <li class="post-nav__post{% if page.url == post.url %} post-nav__post--active{% endif %}">
+                  <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+                    {{ post.title | truncate: 35 }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+
+        {% else %}
+          {% comment %} 서브카테고리 없는 경우 포스트 바로 나열 {% endcomment %}
+          <ul class="post-nav__posts">
+            {% for post in cat_posts %}
+              <li class="post-nav__post{% if page.url == post.url %} post-nav__post--active{% endif %}">
+                <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+                  {{ post.title | truncate: 35 }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+      </details>
+    {% endif %}
+  {% endfor %}
+</nav>

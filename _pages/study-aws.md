@@ -1,8 +1,8 @@
 ---
-title: "Dev Notes / AWS"
+title: "Study / AWS"
 layout: archive
-permalink: /dev-notes/aws/
-author_profile: true
+permalink: /study/aws/
+author_profile: false
 ---
 
 {% assign posts = site.categories['aws'] %}

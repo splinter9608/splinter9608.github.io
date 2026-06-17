@@ -1,8 +1,8 @@
 ---
-title: "Dev Notes / 프로젝트"
+title: "Project"
 layout: archive
-permalink: /dev-notes/project/
-author_profile: true
+permalink: /project/
+author_profile: false
 ---
 
 {% assign posts = site.categories['project'] %}

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-09-07-ghblg.md",
+                "file": "_posts/2024-09-05-markdown.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-09-07-ghblg"
+              "title": "2024-09-05-markdown"
             }
           }
         ]
@@ -185,17 +185,35 @@
   },
   "active": "4206d8b9419bd060",
   "lastOpenFiles": [
+    "assets/css/main.scss.tmp.14624.ea8301e36780",
+    "assets/css/main.scss.tmp.14624.bc011b0c31a3",
+    "_config.yml.tmp.14624.5a2cc31ee156",
+    "_config.yml.tmp.14624.d11d0080f00f",
+    "_config.yml.tmp.14624.a4657bb375e4",
+    "_config.yml.tmp.14624.984c9c78bbfe",
+    "_includes/sidebar.html.tmp.14624.597bc60aeee8",
+    "_includes/post-nav.html.tmp.14624.2c206ac52c15",
+    "_data/navigation.yml.tmp.14624.1581b2ee2477",
+    "_pages/blog.md",
+    "_pages/blog.md.tmp.14624.05f64f97a64c",
+    "_pages/project.md",
+    "_pages/project.md.tmp.14624.675de55ab377",
+    "_pages/study-markdown.md",
+    "_pages/study-gnss.md",
+    "_pages/study-aws.md",
+    "_pages/study.md",
+    "_pages/dev-notes-tools.md",
+    "_pages/dev-notes-blog-setup.md",
+    "_pages/dev-notes.md",
+    "_posts/2024-09-07-ghblg.md",
     "_posts/2024-09-09-aws1.md",
     "_posts/2026-06-16-aws-intro.md",
-    "_posts/2026-06-16-aws-intro.md.3ab5c7aec9968a6ce8f791fcc1b98183.tmp",
     "_posts/2026-06-16-restart.md",
     "_posts/2026-06-15-notebooklm-mcp.md",
     "_posts/2026-06-16-ppp-correction-services.md",
-    "_posts/2026-06-16-ppp-correction-services.md.tmp.21228.70497b741e33",
     "_posts/2026-06-15-obsidian-mcp.md",
     "_posts/2024-09-05-fifth.md",
     "_posts/2024-09-05-markdown.md",
-    "_posts/2024-09-07-ghblg.md",
     "_pages/dev-notes-project.md",
     "_pages/dev-notes-aws.md",
     "_pages/dev-notes-vscode.md",

@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "PPP / PPP-RTK 유료 보정신호 서비스 업체 정리 (북미·유럽·아시아)"
-categories: [study, gps]
+categories: [study, gnss]
 tags: [GPS, GNSS, PPP, PPP-RTK, 자율주행, 측위, 보정신호]
 ---
 
