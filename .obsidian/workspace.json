@@ -185,6 +185,10 @@
   },
   "active": "4206d8b9419bd060",
   "lastOpenFiles": [
+    "_posts/2026-06-22-aws-infra-overview.md",
+    "_pages/fundamentals/aws-basics/ssl-tls.md",
+    "_posts/2026-06-21-aws-ssl-tls.md",
+    "_pages/fundamentals/aws-basics/dns.md",
     "_posts/2026-06-19-aws-cache.md",
     "_posts/2026-06-18-aws-ha-scalability.md",
     "_posts/2026-06-20-aws-dns-network.md",
@@ -216,10 +220,6 @@
     "_posts/2026-06-15-notebooklm-mcp.md",
     "_posts/2026-06-16-ppp-correction-services.md",
     "_posts/2026-06-15-obsidian-mcp.md",
-    "_posts/2024-09-05-fifth.md",
-    "_pages/dev-notes-project.md",
-    "_pages/dev-notes-aws.md",
-    "_pages/dev-notes-vscode.md",
-    "_pages/dev-notes-ai-setup.md"
+    "_posts/2024-09-05-fifth.md"
   ]
 }
